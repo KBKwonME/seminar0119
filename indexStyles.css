@@ -113,3 +113,18 @@ body {
 .shake {
   animation: shake 220ms ease-in-out;
 }
+
+/* SweetAlert2 popup을 사이트 톤에 맞춤 */
+.swal2-popup {
+  border: 1px solid rgba(120, 170, 220, 0.18);
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.45);
+  border-radius: 18px;
+}
+
+.swal2-title {
+  letter-spacing: 0.2px;
+}
+
+.swal2-html-container {
+  color: rgba(235, 245, 255, 0.78);
+}
