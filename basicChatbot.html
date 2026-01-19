@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Chatbot</title>
+  </head>
+  <body>
+    <main class="page">
+      <section class="chatShell">
+        <header class="chatHeader">
+          <div class="chatTitle">Basic Chatbot</div>
+          <div class="chatSub">Direct API call (no proxy)</div>
+        </header>
+
+        <div id="chatLog" class="chatLog" aria-live="polite"></div>
+
+        <form id="chatForm" class="chatComposer" autocomplete="off">
+          <input
+            id="chatInput"
+            class="chatInput"
+            type="text"
+            placeholder="메시지를 입력하세요..."
+            maxlength="2000"
+          />
+          <button id="sendBtn" class="sendBtn" type="submit">Send</button>
+        </form>
+
+        <footer class="chatFooter">
+          <span id="statusText" class="statusText">Ready</span>
+        </footer>
+      </section>
+    </main>
+
+    <script type="module" src="/src/basicChatbotmain.js"></script>
+  </body>
+</html>

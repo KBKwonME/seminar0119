@@ -128,3 +128,30 @@ body {
 .swal2-html-container {
   color: rgba(235, 245, 255, 0.78);
 }
+
+#chatbotLink {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 12px 16px;
+
+  color: rgba(235, 245, 255, 0.9);
+  text-decoration: none;
+  font-weight: 700;
+
+  background: rgba(10, 36, 64, 0.55);
+  border: 1px solid rgba(120, 170, 220, 0.18);
+  border-radius: 14px;
+
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
+  transition: transform 120ms ease, border-color 120ms ease, box-shadow 120ms ease;
+}
+
+#chatbotLink:hover {
+  transform: translateY(-1px);
+  border-color: rgba(95, 179, 255, 0.35);
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.45);
+}
+
+#chatbotLink:active {
+  transform: translateY(0px) scale(0.99);
+}
