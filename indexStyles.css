@@ -1,0 +1,115 @@
+:root {
+  --bg1: #071a2b;
+  --bg2: #0a2440;
+  --card: rgba(10, 36, 64, 0.6);
+  --border: rgba(120, 170, 220, 0.18);
+  --text: rgba(235, 245, 255, 0.92);
+  --muted: rgba(235, 245, 255, 0.72);
+  --accent: #5fb3ff;
+  --danger: #ff5f7a;
+  --shadow: rgba(0, 0, 0, 0.45);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Noto Sans,
+    Apple SD Gothic Neo, "Malgun Gothic", sans-serif;
+  background: radial-gradient(1200px 900px at 20% 15%, #0f3b66 0%, transparent 55%),
+    radial-gradient(900px 700px at 80% 85%, #0c2f52 0%, transparent 52%),
+    linear-gradient(160deg, var(--bg1), var(--bg2));
+}
+
+#app {
+  min-height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+#app > * {
+  text-align: center;
+}
+
+#dangerBtn {
+  width: min(720px, 92vw);
+  padding: 22px 26px;
+  font-size: clamp(22px, 3.2vw, 40px);
+  font-weight: 800;
+  letter-spacing: 0.3px;
+
+  color: var(--text);
+  background: linear-gradient(180deg, rgba(14, 60, 110, 0.95), rgba(9, 38, 72, 0.95));
+  border: 1px solid var(--border);
+  border-radius: 18px;
+
+  box-shadow:
+    0 22px 60px var(--shadow),
+    0 0 0 2px rgba(95, 179, 255, 0.06) inset;
+
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 120ms ease, border-color 120ms ease;
+  outline: none;
+}
+
+#dangerBtn:hover {
+  transform: translateY(-2px);
+  border-color: rgba(95, 179, 255, 0.35);
+  box-shadow:
+    0 26px 70px var(--shadow),
+    0 0 0 2px rgba(95, 179, 255, 0.10) inset;
+}
+
+#dangerBtn:active {
+  transform: translateY(0px) scale(0.99);
+}
+
+#warningMsg {
+  margin: 18px 0 0;
+  min-height: 1.4em; /* 공간 확보 */
+  font-size: clamp(14px, 1.5vw, 18px);
+  color: var(--muted);
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+#warningMsg.show {
+  opacity: 1;
+  transform: translateY(0);
+  color: rgba(255, 95, 122, 0.92);
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-6px);
+  }
+  40% {
+    transform: translateX(6px);
+  }
+  60% {
+    transform: translateX(-4px);
+  }
+  80% {
+    transform: translateX(4px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.shake {
+  animation: shake 220ms ease-in-out;
+}
