@@ -5,14 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Do Not Click</title>
   </head>
+
   <body>
     <div id="app">
-      <button id="dangerBtn" type="button">Do Not Click This Button</button>
+      <div class="stack">
+        <button id="dangerBtn" type="button">Do Not Click This Button</button>
 
-      <!-- basicChatbot.html로 이동 버튼(추가) -->
-      <a id="chatbotLink" href="/basicChatbot.html" aria-label="basicChatbot 페이지로 이동">
-        Go to Basic Chatbot
-      </a>
+        <a class="navBtn" href="/basicChatbot.html">Go to Basic Chatbot</a>
+
+        <a
+          class="navBtn"
+          href="https://chatgpt.com/g/g-67f75d184ac88191a5225e7998e2fe7c-icahamsu-jogeon-cajgi-jido"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          이차함수 조건 찾기 지도 GPT 열기
+        </a>
+      </div>
     </div>
 
     <script type="module" src="/src/main.js"></script>
