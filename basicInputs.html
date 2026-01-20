@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>사용자 입력 예제</title>
+  <link rel="stylesheet" href="./basicInputsStyles.css" />
+</head>
+<body>
+
+  <div class="input-block">
+    <label for="textInput">텍스트 입력</label>
+    <input type="text" id="textInput" placeholder="이름 입력">
+  </div>
+
+  <div class="input-block">
+    <label for="passwordInput">비밀번호 입력</label>
+    <input type="password" id="passwordInput" placeholder="비밀번호 입력">
+  </div>
+
+  <div class="input-block">
+    <label for="emailInput">이메일</label>
+    <input type="email" id="emailInput" placeholder="example@email.com">
+  </div>
+
+  <div class="input-block">
+    <label for="numberInput">숫자</label>
+    <input type="number" id="numberInput" min="0" max="100">
+  </div>
+
+  <div class="input-block">
+    <label>성별</label>
+    <div class="inline-options">
+      <label><input type="radio" name="gender" value="male" checked> 남성</label>
+      <label><input type="radio" name="gender" value="female"> 여성</label>
+    </div>
+  </div>
+  
+  <div class="input-block">
+    <label>취미</label>
+    <div class="inline-options">
+      <label><input type="checkbox" name="hobby" value="reading"> 독서</label>
+      <label><input type="checkbox" name="hobby" value="sports"> 운동</label>
+      <label><input type="checkbox" name="hobby" value="game"> 게임</label>
+    </div>
+  </div>
+  
+
+  <div class="input-block">
+    <label for="selectCity">도시 선택</label>
+    <select id="selectCity">
+      <option value="seoul">서울</option>
+      <option value="busan">부산</option>
+      <option value="daegu">대구</option>
+    </select>
+  </div>
+
+  <div class="input-block">
+    <label for="textareaInput">자기소개</label>
+    <textarea id="textareaInput" rows="4" placeholder="자기소개를 입력하세요"></textarea>
+  </div>
+
+  <div class="input-block">
+    <label for="dateInput">생년월일</label>
+    <input type="date" id="dateInput">
+  </div>
+
+  <div class="input-block">
+    <label for="timeInput">시간 선택</label>
+    <input type="time" id="timeInput">
+  </div>
+
+  <div class="input-block">
+    <label for="fileInput">파일 업로드</label>
+    <input type="file" id="fileInput">
+  </div>
+
+  <div class="input-block">
+    <button id="submitBtn">입력값 확인</button>
+  </div>
+
+  <!-- 결과 출력 영역 -->
+  <div class="input-block" id="resultBlock" style="display: none;">
+    <h3>입력 결과</h3>
+    <div id="result"></div>
+  </div>
+
+  <script type="module" src="src/basicInputsMain.js"></script>
+</body>
+</html>

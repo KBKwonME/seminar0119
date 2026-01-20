@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d1b2a;
+  color: #e0e1dd;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input-block {
+  width: 100%;
+  max-width: 600px;
+  background-color: #1b263b;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  margin-bottom: 24px;
+}
+
+.input-block label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #e0e1dd;
+}
+
+.input-block input[type="text"],
+.input-block input[type="password"],
+.input-block input[type="email"],
+.input-block input[type="number"],
+.input-block input[type="date"],
+.input-block input[type="time"],
+.input-block input[type="file"],
+.input-block select,
+.input-block textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: #0d1b2a;
+  color: #e0e1dd;
+  border: 1px solid #415a77;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.input-block textarea {
+  resize: vertical;
+}
+
+.inline-options {
+  display: flex;
+  gap: 20px;
+  margin-top: 4px;
+}
+
+.inline-options label {
+  font-weight: normal;
+  color: #e0e1dd;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #415a77;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #274c77;
+}
+
+#resultBlock {
+  width: 100%;
+  max-width: 600px;
+  background-color: #1b263b;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+#resultBlock h3 {
+  margin-top: 0;
+  color: #f0f4f8;
+}
+
+#result {
+  white-space: pre-wrap;
+}
